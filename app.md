@@ -37,6 +37,10 @@ spec:
       nodeSelector:
         kubernetes.io/os: linux
 
-        ```
+ ```
 
 # To deploy the app
+
+```
+kubectl apply -f deploy.yaml
+```
