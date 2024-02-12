@@ -46,7 +46,7 @@ kubectl apply -f deploy.yaml
 ```
 
 
-#service of the app
+# Service Deployment of the app
 
 ```
 apiVersion: v1
