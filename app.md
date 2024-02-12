@@ -44,3 +44,28 @@ spec:
 ```
 kubectl apply -f deploy.yaml
 ```
+
+
+#service of the app
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: eks-sample-linux-service
+  labels:
+    app: eks-sample-linux-app
+spec:
+  selector:
+    app: eks-sample-linux-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+
+```
+# for service deploy
+
+```
+kubectl apply -f service.yaml
+```
